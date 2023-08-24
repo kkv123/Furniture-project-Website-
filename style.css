@@ -20,7 +20,7 @@ header {
 }
 
 .background {
-    background: rgba(0, 0, 0, .6) url(../img/img4.jpg);
+    background: rgba(0, 0, 0, .6) url(./img/img4.jpg);
 
     background-blend-mode: color-dodge;
     background-repeat: no-repeat;
