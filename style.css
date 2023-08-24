@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=PT+Serif:ital@1&family=Playfair+Display&family=Quicksand:wght@300&display=swap');
 
 
@@ -9,7 +9,7 @@
 }
 
 h1 {
-    font-size: 33px;
+    font-size: 27px;
 }
 
 header {
@@ -230,8 +230,7 @@ video {
 video:hover {
     transform: scale(1.1);
     z-index: 2;
-    /* transform: scaleX(1.2); */
-    /* transform: scaleZ(1.2); */
+ 
 }
 
 
@@ -331,13 +330,14 @@ h1{
     transition: 1s;
 }
 h1:hover{
-    font-size: 50px;
+    font-size: 38px;
     color: rgb(69, 210, 201);
 }
 .why-us-1-1-left,
 .why-us-1-2-left,
 .why-us-2-1-left,
 .why-us-2-2-left {
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -452,11 +452,7 @@ h1:hover{
     border-radius: 50px;
     margin-right: 2vw;
 }
-/* .about-form{
-    background: rgba(0, 0, 0, .4) url(img/img3.jpg);
-    width: 46vw;
-    height: 45vh;
-} */
+ 
 form {
     height: 45vh;
     width: 46vw;
@@ -523,6 +519,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .footer1 {
@@ -679,7 +676,7 @@ form {
 
     .detail {
         width: 85vw;
-        height: 50vh;
+        height: 60vh;
         background: rgba(0, 0, 0, .4) url(img/img3.jpg);
         background-blend-mode: darken;
         background-size: cover;
@@ -687,6 +684,8 @@ form {
         color: white;
         border-radius: 50px;
         margin-right: 2vw;
+        display: flex;
+        flex-direction: column;
     }
 
     form {
@@ -709,7 +708,7 @@ form {
     }
 
     .submit {
-        width: 10vw;
+        width: 13vw;
         height: 5vh;
         margin-bottom: 2vh;
         border-radius: 10px;
@@ -762,10 +761,11 @@ form {
 
     .why-us-1,
     .why-us-2 {
+
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
         margin-top: 1.5vh;
         /* background: red; */
     }
@@ -779,6 +779,9 @@ form {
         align-items: center;
         flex-direction: row;
         margin-right: 14vw;
+        width: 80vw;
+    height: 20vw;
+    margin-right: 1vw;
      
     }
 
@@ -795,5 +798,119 @@ form {
          
     }
 
+
+}
+@media only screen and (max-width:450px) {
+    
+    .box h1 {
+        margin-top: 3vh;
+    }
+
+  
+    .box2-left {
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .box2-right img {
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .box1-right img {
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .box3-right img {
+        width: 90vw;
+        height: 25vh;
+    }
+    .gallary .gallary-1 img {
+        height: 20vh;
+    }
+    
+    .video-1{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2vh;
+    }
+   
+    .video .video-1 h1 {
+        display: flex;
+        margin-bottom: 1vh;
+        margin-top: 2vh;
+        margin-left: 31vw;
+    }
+    
+    .video .video-1 video {
+        width: 80vw;
+        margin-left: 0.2vw;
+        /* border: 3px solid white; */
+        height: 30vh;
+        border-radius: 30px;
+    }
+    .why-us-1-1,
+    .why-us-1-2,
+    .why-us-2-1,
+    .why-us-2-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 14vw;
+        width: 80vw;
+    height: 40vw;
+    margin-right: 1vw;
+     
+    }
+
+    .why-us-1-1-left,
+    .why-us-1-2-left,
+    .why-us-2-1-left,
+    .why-us-2-2-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 4vw;
+        margin-left: 0vw;
+         
+    }
+  
+
+    .detail{
+        display: flex;
+        flex-direction: column;
+        height: 45vh;
+    }
+
+    
+    form {
+        margin-top: 4vh;
+        width: 85vw;
+    }
+
+    .name,
+    .contact1,
+    .email,
+    .textarea {
+        width: 85vw;
+        height: 3vh;
+        margin-bottom: 1vh;
+        border-radius: 10px;
+    }
+
+    .textarea {
+        height: 10vh;
+    }
+
+    .submit {
+        width: 30vw;
+        height: 2.5vh;
+        margin-bottom: 2vh;
+        border-radius: 10px;
+    }
 
 }
