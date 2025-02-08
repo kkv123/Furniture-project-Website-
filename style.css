@@ -10,10 +10,41 @@
 }
 
 .ImpHeading{
-    font-size: 33px;
+    font-size: 30px;
     font-weight: bolder;
     font-family: 'Playfair Display', serif;
+    background: linear-gradient(45deg, #ca0dfe, #99da02, #031c47);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(26, 48, 43, 0);
+}
+@keyframes animate {
+    0% { background-position: 200%; }
+    30% { background-position: 150% }
+    50% { background-position: 100% }
+    70%{  background-position: 50%}
+    100% { background-position: 0%; }
+}
 
+input::placeholder{
+    background: linear-gradient(45deg, #cdb6b6, #dacdcd, #7c8da9);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(26, 48, 43, 0);
+}
+
+.ImpHeading1{
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(45deg, #ca0dfe, #dbdb25, #031c47);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    animation: animate 8s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(50, 41, 41, 0);
+   
 }
 body{
     width: 100%;
@@ -70,14 +101,21 @@ nav ul li a {
     color: white;
     cursor: pointer;
 }
-nav ul li a:hover {
-     transition: all 1s;
+nav ul li a {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out, padding 0.3s ease-in-out;
+    /* padding: 10px 20px; */
+    border-radius: 15px; /* Adjust this value to get the desired roundness */
 }
+
 nav ul li a:hover {
-    font-size: 25px;
-    /* font-weight: bolder; */
-    color: aqua;
+    color: #fc036b;
+    background-color: #000000;
+    transform: scale(1.1);
+    padding: 10px 20px; /* Ensure padding is the same to maintain border radius */
 }
+
+
+
 
 nav ul {
     /* position: sticky; */
@@ -163,20 +201,36 @@ nav ul {
 .box0-left {
     margin-right: 30px;
     margin-left: 6%;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(45deg, #00bbff, #ffffff, #a0b2d0);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    padding: 2px;
+    -webkit-text-fill-color: rgba(26, 48, 43, 0);
 }
 .hoverk{
-    transition: 1s;
+    font-size: 1.2em;
 }
-.hoverk:hover{
+.hoverk {
+   
+    transition: all 1s ease-in-out;
+}
+
+.hoverk:hover {
     font-size: 20px;
     font-weight: bolder;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow effect */
 }
-.hoverkp{
-    transition: 0.51s;
+
+.hoverkp {
+    transition: all 0.51s ease-in-out;
 }
-.hoverkp:hover{
-    transform:scale(1.03);
+
+.hoverkp:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3); /* Add shadow effect */
 }
+
 .container {
     background-color: #dfd7c7de;
 }
@@ -257,6 +311,15 @@ video:hover {
 
 .box1-left {
     margin-right: 30px;
+}
+
+.box1-left,.box2-left,.box3-left{
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(45deg, #ca0dfe, #000000, #03368d);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    padding: 2px;
+    -webkit-text-fill-color: rgba(26, 48, 43, 0);
 }
 
 .box2-right img {
@@ -344,10 +407,16 @@ video:hover {
     border: 3px solid rgb(249, 249, 249);
     border-radius: 20px;
     margin-top: 1vh;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(45deg, #ca0dfe, #000000, #03368d);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    padding: 2px;
+    -webkit-text-fill-color: rgba(26, 48, 43, 0);
 }
 
 h1{
-    transition: 1s;
+    transition: all 1s ease-in-out;
 }
 h1:hover{
     font-size: 38px;
@@ -457,6 +526,11 @@ h1:hover{
     font-size: 25px;
     padding: 1vw;
     margin: 6px;
+    background: linear-gradient(45deg, #cdb6b6, #dacdcd, #7c8da9);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    /* padding: 2px; */
+    -webkit-text-fill-color: rgba(26, 48, 43, 0);
 }
 .our-timing li{
     margin-left: 2vw;
@@ -907,7 +981,7 @@ form {
         width: 50px;
         border-radius: 90px;
         height: 50px;
-        border: 3px solid rgb(73, 73, 238);
+       
     }
 
     .why-us-1,
@@ -931,8 +1005,8 @@ form {
         flex-direction: row;
         margin-right: 14vw;
         width: 80vw;
-    height: 20vw;
-    margin-right: 1vw;
+        height: 20vw;
+        margin-right: 1vw;
      
     }
 
@@ -945,8 +1019,7 @@ form {
         align-items: center;
         flex-direction: row;
         margin-right: 4vw;
-        margin-left: 0vw;
-         
+        margin-left: 0vw;     
     }
     .name,
     .contact1,
@@ -957,8 +1030,7 @@ form {
         margin-bottom: 1vh;
         border-radius: 10px;
         margin-left: 2vw;
-        margin-right: 2vw;
-        
+        margin-right: 2vw;     
     }
     .submit{
         margin-left: 2vw;
@@ -967,6 +1039,7 @@ form {
         font-size: 25px;
         padding: 1vw;
         margin: 6px;
+
     }
     .contact li{
         font-size: large;
@@ -1112,4 +1185,13 @@ form {
         margin-right:0%;
         margin-left: 0%;
     }
+}
+@media only screen and (max-width:395px){
+    header {
+        height: 110vh;
+    }
+    .box h1 {
+        margin-top: 29vh;
+    }
+     
 }

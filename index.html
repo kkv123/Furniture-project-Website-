@@ -37,7 +37,7 @@
         </nav>
         <div class="box">
             <div class="subBox">
-                <h1>Amazing Furniture, Even Better Price Tag</h1>
+                <h1 class="ImpHeading1">Amazing Furniture, Even Better Price Tag</h1>
                 <div class="box0">
                     <div class="box0-left">
                         Amazing Furniture, Even Better Price Tag is a furniture store that offers a wide range of furniture for your home. They have a complete furniture collection for your living room, dining room, and bedroom 1. They also offer Italian sofas that are designed with the deep buttoning technique . 
@@ -170,20 +170,20 @@
                 <form action="">
 
                     <tr>
-                        <input type="text" placeholder="  Enter Full Name" class="name" id="inputText" >
+                        <input type="text" placeholder="  Enter Full Name ..." class="name" id="inputText" >
                     </tr>
 
                     <tr>
-                        <input type="text" placeholder="  Contact" class="contact1" id="inputText">
+                        <input type="text" placeholder="  Contact ..." class="contact1" id="inputText">
                     </tr>
                     <br>
                     <tr>
 
-                        <input type="email" placeholder="  Enter Email" class="email" id="inputText">
+                        <input type="email" placeholder="  Enter Email ..." class="email" id="inputText">
                     </tr>
                     <br>
                     <tr>
-                        <textarea name="" id="" class="textarea" placeholder="  Enter Your Concern"></textarea>
+                        <textarea name="" id="" class="textarea" placeholder="  Enter Your Concern ..."></textarea>
                     </tr>
                     <tr>
                         <button class="submit" id="inputText">Submit</button>
@@ -212,6 +212,9 @@
         nav.style.height = "30vh";// Set header height
         kp.style.visibility = "collapse";
         header.style.setProperty("height", "115vh", "important");  
+        if(window.screen.width<400){
+            header.style.setProperty("height", "128vh", "important");  
+        }
     });
 
     nav.addEventListener("mouseleave", () => {
