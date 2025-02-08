@@ -19,7 +19,6 @@
             <div class="image">
                 <img src="img/img1.jpg" alt="">
             </div>
-
             <ul>
                 <li><a href="#Home">Home</a> </li>
                 <li><a href="#Service">About</a> </li>
@@ -29,7 +28,7 @@
             </ul>
             <div class="search_bar">
                 <div class="search_space">
-                    <input type="text" id="search_space">
+                    <input type="text" id="search_space" placeholder="search here ...">
                 </div>
                 <div class="search-btn">
                     <button id="search-btn">Search</button>
@@ -37,16 +36,17 @@
             </div>
         </nav>
         <div class="box">
-            <h1>Amazing Furniture, Even Better Price Tag</h1>
-            <div class="box0">
-                <div class="box0-left">
-                    Amazing Furniture, Even Better Price Tag is a furniture store that offers a wide range of furniture for your home. They have a complete furniture collection for your living room, dining room, and bedroom 1. They also offer Italian sofas that are designed with the deep buttoning technique . 
-                </div>
-                <div class="box0-right">
-                    <img src="img/img1.jpg" alt="">
+            <div class="subBox">
+                <h1>Amazing Furniture, Even Better Price Tag</h1>
+                <div class="box0">
+                    <div class="box0-left">
+                        Amazing Furniture, Even Better Price Tag is a furniture store that offers a wide range of furniture for your home. They have a complete furniture collection for your living room, dining room, and bedroom 1. They also offer Italian sofas that are designed with the deep buttoning technique . 
+                    </div>
+                    <div class="box0-right">
+                        <img src="img/img1.jpg" alt="">
+                    </div>
                 </div>
             </div>
-             
         </div>
     </header>
     <main>
@@ -145,24 +145,24 @@
                 <div class="detail">
                     <div class="contact-box1">
                         <div class="address">
-                            <h1>Office Address</h1>
+                            <h2>Office Address</h2>
                             <li>Amanora Court Bldg M, 501/B, 5th Floor, New Link Road, Beside Goregaon Sports Complex,
                                 Kharadi, Pune, Maharashtra
                                 400003
                             </li>
                         </div>
                         <div class="enquiry">
-                            <h1>General Enquiry</h1>
+                            <h2>General Enquiry</h2>
                             <li>websupport@justdial.com</li>
                         </div>
                     </div>
                     <div class="contact-box2">
                         <div class="call">
-                            <h1>Call Us</h1>
+                            <h2>Call Us</h2>
                             <li>+91-8888888888</li>
                         </div>
                         <div class="our-timing">
-                            <h1>Our-Timing</h1>
+                            <h2>Our-Timing</h2>
                             <li>Mon - Sun : 10:00AM - 07:00 PM</li>
                         </div>
                     </div>
@@ -206,11 +206,21 @@
 <script>
     let kp = document.querySelector(".burger");
     kp.addEventListener("click", () => {
-        document.querySelector("nav").style.visibility = "visible";
-        document.querySelector("nav").style.height = 30 + "vh";
+        let nav = document.querySelector("nav");
+        let header = document.querySelector("header");
+        nav.style.visibility = "visible";
+        nav.style.height = "30vh";// Set header height
         kp.style.visibility = "collapse";
-
+        header.style.setProperty("height", "115vh", "important");  
     });
+
+    nav.addEventListener("mouseleave", () => {
+        nav.style.visibility = "hidden";
+        nav.style.height = "0";
+        kp.style.visibility = "visible";
+    });
+    
+    
 
 </script>
 
