@@ -40,15 +40,11 @@ header {
 }
 
 nav {
-
     width: 100vw;
-    height: 8vh;
-    /* border: 2px solid white; */
+    height: 8vh;   /* border: 2px solid white; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-
 }
 
 #nav1 {
@@ -71,11 +67,11 @@ nav ul li a {
     cursor: pointer;
 }
 nav ul li a:hover {
-     transition: 1s;
+     transition: all 1s;
 }
 nav ul li a:hover {
     font-size: 25px;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     color: aqua;
 }
 
@@ -104,8 +100,8 @@ nav ul {
 .search_bar {
     display: flex;
     position: absolute;
-    right: 0px;
-    margin-top: 22px;
+    right: 14px;
+    margin-top: 3px;
 }
 
 #search_space {
@@ -122,6 +118,11 @@ nav ul {
     border: 1px solid black;
     height: 23px;
     border-radius: 10px;
+}
+
+.box{
+    height: 60vh;
+    width: 100vw;
 }
 
 .box h1 {
@@ -143,16 +144,21 @@ nav ul {
     margin-left: 14vw;
     margin-right: 14vw;
     color: white;
+    flex-direction: row-reverse;
 }
 
 .box0-right img {
-    width: 200px;
+    width: 136px;
     border-radius: 101px;
     border: 3px solid white;
+}
+.box0-right{
+
 }
 
 .box0-left {
     margin-right: 30px;
+    margin-left: 6%;
 }
 .hoverk{
     transition: 1s;
@@ -374,7 +380,7 @@ h1:hover{
 
 .gallary .gallary-1 h1 {
     /* display: flex; */
-    margin-left: 40vw;
+    margin-left: 42vw;
     margin-bottom: 5vh;
     margin-top: 5vh;
 }
@@ -441,7 +447,15 @@ h1:hover{
 
 .contact h1 {
     margin-top: 2.5vh;
-    /* margin-bottom: 5vh; */
+    margin-bottom: 4vh;
+}
+.contact h2 {
+    font-size: 25px;
+    padding: 1vw;
+    margin: 6px;
+}
+.our-timing li{
+    margin-left: 2vw;
 }
 
 .contact .con {
@@ -483,6 +497,7 @@ form {
     margin-top: 5vh;
     margin-bottom: 2vh;
     border-radius: 10px;
+    font-family: monospace;
 }
 
 .contact1 {
@@ -491,6 +506,7 @@ form {
     height: 4vh;
     margin-bottom: 2vh;
     border-radius: 10px;
+    font-family: monospace;
 }
 
 .email {
@@ -499,6 +515,7 @@ form {
     height: 4vh;
     margin-bottom: 2vh;
     border-radius: 10px;
+    font-family: monospace;
 }
 
 .textarea {
@@ -507,6 +524,7 @@ form {
     height: 4vh;
     margin-bottom: 2vh;
     border-radius: 10px;
+    font-family: monospace;
 }
 
 .submit {
@@ -515,6 +533,7 @@ form {
     height: 4vh;
     margin-bottom: 2vh;
     border-radius: 10px;
+    font-family: monospace;
 }
 
 .address,
@@ -548,56 +567,169 @@ form {
     bottom: 0px;
 }
 
-/* @media only screen and (max-width:906px)  */
+@media only screen and (max-width:1024px){
+    .image img {
+        border-radius: 73px;
+        border: 2px solid white;
+        height: 4vh;
+        margin-left: 18px;
+        transform: rotateZ(-6deg);
+    }
+    nav ul {
+        /* position: sticky; */
+        left: 42px;
+        position: absolute;
+    }
+    nav{
+        height: 4vh;
+    }
+    header {
+        height: 49vh ;
+    }
+    .search_bar {
+        display: flex;
+        position: absolute;
+        right: 14px;
+        margin-top: 3px;
+        font-family: monospace;
+    }
+    .box {
+        height: 36vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 4vw;
+    } 
+    .box h1 {
+        margin-top: 6vh;
+        margin-bottom: 3vh;
+        margin-left: 20vw;
+        margin-right: 14vw;
+        font-size: 40px;
+        color: white;
+    }
+    .gallary .gallary-1 img {
+        height: 15vh;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    .video .video-1 video {
+        width: 42vw;
+        margin-left: 1vw;
+        height: 23vh;
+        border-radius: 40px;
+    }
+    .video .video-1 h1 {
+        display: flex;
+        margin-bottom: 0vh;
+        margin-top: -1vh;
+        margin-left: 36vw;
+    }
+    .detail {
+        width: 46vw;
+        height: 40vh;
+    }
+    form {
+        height: 40vh;
+    }
+    .contact {
+        height: 44vh;
+    }
+    .contact h1 {
+        margin-top: 2.5vh;
+        margin-bottom: 4vh;
+    }
+    .contact-prop {
+        margin-bottom: 9vh;
+    }
+    .footer1{
+        margin-top: 12vh;
+    }
+
+    .contact h2 {
+        font-size: 21px;
+        padding: 1vw;
+        margin: 6px;
+    }
+    .contact li{
+        font-size: 15px;
+    }
+
+}
+@media only screen and (max-width:867px) {
+   .contact h2 {
+        font-size: 18px;
+        padding: 1vw;
+        margin: 6px;
+    }
+    .contact li{
+        font-size: 14px;
+    } 
+     .enquiry{
+        width: 22vw;
+     }
+}
 @media only screen and (max-width:770px) {
 
     nav {
-        visibility: collapse;
-
+        visibility: hidden; /* Use visibility:hidden to hide the nav */
+        height: 5vh;
+        flex-direction: column;
+        transition: visibility 0.3s, height 0.3s;
     }
-
+    
     .burger {
         visibility: visible;
+        cursor: pointer;
+        position: absolute;
+        z-index: 1001;
+        
     }
-
+    
     .image,
     .search_bar,
     nav {
-        position: static;
-
+        position: relative;
     }
-
+    
     nav ul {
         position: static;
     }
-
+    
     nav ul li {
         display: block;
         padding: 7px;
-        left: -22px;
         text-align: center;
-        /* margin-right: 150px; */
         position: relative;
     }
-
+    
     nav ul li a {
-        /* position: absolute; */
-        padding: 50px;
+        padding: 10px; /* Adjust padding to avoid overlapping */
+        margin-left: 40px;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        transition: all 1s; /* Added transition here */
     }
-
-    nav {
-        height: 5vh;
-        flex-direction: column;
-
-
+    
+    nav ul li a:hover {
+        font-size: 25px;
+        /* font-weight: bolder; */
+        color: aqua;
     }
-
     header {
-        height: 105vh;
+        height: 81vh;
     }
 
     .box h1 {
         margin-top: 3vh;
+    }
+
+    .box{
+            height: 68vh;
     }
 
     .box1,
@@ -680,7 +812,7 @@ form {
 
     .contact h1 {
         margin-top: 2.5vh;
-        /* margin-bottom: 5vh; */
+        margin-bottom: 4vh;
     }
 
     .contact .con {
@@ -826,8 +958,14 @@ form {
     .submit{
         margin-left: 2vw;
     }
-    
-
+    .contact h2 {
+        font-size: 25px;
+        padding: 1vw;
+        margin: 6px;
+    }
+    .contact li{
+        font-size: large;
+    }
 }
 @media only screen and (max-width:450px) {
     
@@ -951,10 +1089,22 @@ form {
 
     .submit {
         width: 30vw;
-        height: 2.5vh;
+        height: 5vh;
         margin-bottom: 2vh;
         margin-left: 2vw;
         border-radius: 10px;
     }
 
+}
+@media only screen and (max-width:430px){
+    header {
+        height: 93vh;
+    }
+    .box h1 {
+        margin-top: 15vh;
+    }
+    .box0-left {
+        margin-right:0%;
+        margin-left: 0%;
+    }
 }
